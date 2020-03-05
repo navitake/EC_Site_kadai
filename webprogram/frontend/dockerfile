@@ -1,0 +1,14 @@
+FROM node:8.16.0-alpine
+
+ENV NODE_ENV=development
+
+# node 環境(express)
+RUN npm install --save nodemon express body-parser cors vue
+
+# node で開発(フロントエンド)
+RUN npm install --save-dev webpack webpack-cli webpack-dev-server
+RUN npm install --save-dev babel-loader @babel/core @babel/preset-env @babel/polyfill
+
+WORKDIR /app
+
+EXPOSE 3000

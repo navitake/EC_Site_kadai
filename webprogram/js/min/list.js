@@ -1,0 +1,1 @@
+var cartWrap=document.getElementsByClassName("cartWrap")[0],toggleButton=document.getElementById("cartToggleButton");function toggleCart(){cartWrap.classList.toggle("cartInvisible"),toggleButton.classList.toggle("cartInvisible")}

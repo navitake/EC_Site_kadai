@@ -1,0 +1,38 @@
+CREATE TABLE category
+(
+   id INT NOT NULL PRIMARY KEY  AUTO_INCREMENT,
+   name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE auter
+(
+   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+   name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE tag
+(
+   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+   name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE books
+(
+   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+   title VARCHAR(255) NOT NULL,
+   isbn INT(13) NOT NULL unique,
+   value INT NOT NULL,
+   category_id INT NOT NULL,
+   auter_id INT NOT NULL,
+   FOREIGN KEY (category_id) REFERENCES category(id),
+   FOREIGN KEY (auter_id) REFERENCES auter(id)
+);
+
+CREATE TABLE books_tag
+(
+   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+   book_id INT NOT NULL,
+   tag_id INT NOT NULL,
+   FOREIGN KEY (book_id) REFERENCES books(id),
+   FOREIGN KEY (tag_id) REFERENCES tag(id)
+);

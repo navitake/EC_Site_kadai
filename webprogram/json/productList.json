@@ -1,0 +1,50 @@
+[
+    {
+        "id": null,
+        "name": "asagao",
+        "code": "re3000",
+        "value": 500,
+        "color": [
+            "red",
+            "blue",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M"
+        ],
+        "filepath": null
+    },
+    {
+        "id": null,
+        "name": "\u6c34",
+        "code": "water200",
+        "value": 120,
+        "color": [
+            "blue"
+        ],
+        "size": [
+            "S",
+            "M"
+        ],
+        "filepath": null
+    },
+    {
+        "id": null,
+        "name": "\u4f55\u304b",
+        "code": "iro11",
+        "value": 1122,
+        "color": [
+            "red",
+            "blue",
+            "white",
+            "black"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "filepath": null
+    }
+]

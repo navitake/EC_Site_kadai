@@ -1,0 +1,63 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', 'YuGothic';
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    background-color: #666;
+    padding: 0 0.5rem;
+
+    a {
+        color: #FFF;
+
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        font-weight: normal;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        // justify-content: space-around;
+
+        li {
+            padding: 0 0.8rem;
+            text-align: center;
+            font-size: 1.6rem;
+            transition: all 300ms 0s ease;
+
+            &:hover {
+                font-size: 1.8rem;
+                padding: 0 0.3rem;
+
+                a {
+                    color: #43C1BB;
+                }
+
+            }
+        }
+    }
+
+    i {
+        margin-right: 0.5rem;
+    }
+
+
+}

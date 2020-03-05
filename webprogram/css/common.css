@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', 'YuGothic'; }
+
+body {
+  font-size: 1.6rem; }
+
+li {
+  list-style-type: none; }
+
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none; }
+
+.headerMenu {
+  display: flex;
+  justify-content: space-between;
+  color: #FFF;
+  background-color: #666;
+  padding: 0 0.5rem; }
+  .headerMenu a {
+    color: #FFF; }
+  .headerMenu h1 {
+    font-size: 2.4rem;
+    font-weight: normal; }
+  .headerMenu ul {
+    display: flex;
+    align-items: center; }
+    .headerMenu ul li {
+      padding: 0 0.8rem;
+      text-align: center;
+      font-size: 1.6rem;
+      transition: all 300ms 0s ease; }
+      .headerMenu ul li:hover {
+        font-size: 1.8rem;
+        padding: 0 0.3rem; }
+        .headerMenu ul li:hover a {
+          color: #43C1BB; }
+  .headerMenu i {
+    margin-right: 0.5rem; }

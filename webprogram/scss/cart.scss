@@ -1,0 +1,54 @@
+.allValue {
+    background-color: #eee;
+    width: 80vw;
+    height: 10rem;
+    margin: 2rem auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h1 {
+        font-weight: normal;
+        font-size: 2rem;
+    }
+
+    button {
+        width: 10rem;
+    }
+}
+
+.cartWrap {
+    padding: 1rem 3rem;
+
+    h1 {
+        font-size: 2.4rem;
+    }
+}
+
+.cartList {
+    display: flex;
+    flex-direction: column;
+
+
+    .cartItem {
+        width: 90vw;
+        max-width: 80rem;
+        display: flex;
+
+        .cartItemData {
+            width: 70%;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .cartImage {
+            width: 30%;
+
+            img {
+                max-width: 100%;
+                height: 10rem;
+            }
+        }
+    }
+}
